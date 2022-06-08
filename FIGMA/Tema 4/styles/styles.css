@@ -109,6 +109,14 @@ body {
           background: blue;
           border-radius: 44px;
           height: 4px; }
+          .container .content .status .progress .bar.percentage1 {
+            width: 24%; }
+          .container .content .status .progress .bar.percentage2 {
+            width: 90%; }
+          .container .content .status .progress .bar.percentage3 {
+            width: 70%; }
+          .container .content .status .progress .bar.percentage4 {
+            width: 50%; }
       .container .content .status span {
         font-weight: 600;
         font-size: 12px;
