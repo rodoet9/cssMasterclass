@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans:ital,wght@0,300;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.container {
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  padding: 40px; }
+  .container .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 12px; }
+  .container .box {
+    margin-bottom: 24px;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    width: auto; }
+    .container .box:last-child {
+      margin-bottom: 0; }
+    .container .box .text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #A3A3A3;
+      padding: 8px 10px; }
+  .container .details {
+    display: flex; }
+    .container .details .expiration {
+      margin-right: 24px; }
+    .container .details .box {
+      width: 148px; }
+
+/*# sourceMappingURL=styles.css.map */
