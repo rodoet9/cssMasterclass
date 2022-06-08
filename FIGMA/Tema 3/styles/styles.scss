@@ -1,0 +1,100 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans:ital,wght@0,300;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+
+  .header {
+
+    img {
+      border-radius: 8px 8px 0px 0px;
+      width: 230px;
+      height: auto;
+    }
+  }
+
+  .details {
+    padding-left: 16px;
+    padding-right: 32px;
+    border-bottom: 1px solid #E5E5E5;;
+
+    .name {
+      padding-top: 16px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: #969696;
+      margin-bottom: 4px;
+    }
+
+    .title {
+
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+      width: 150px;
+      margin-bottom: 12px;
+    }
+
+    .info {
+      display: flex;
+
+      .number {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #006AF7;
+        margin-right: 2px;
+      }
+
+      .text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #969696;
+        margin-right: 24px;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+
+    .start {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #006AF7;
+      display: flex;
+      flex: 1;
+      padding: 12px 16px;
+    }
+
+    .price {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      color: #000000;
+      padding: 12px 8px;
+    }
+  }
+}
