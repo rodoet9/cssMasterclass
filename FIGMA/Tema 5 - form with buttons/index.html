@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Tema 5 - click</title>
+</head>
+<body>
+<div class="container">
+    <form action="php_file.php" method="post">
+        <div class="title">
+            <label for="numecard">Name on card</label>
+        </div>
+        <div class="box">
+            <input type="text" id="numecard" placeholder="Enter your name" required>
+        </div>
+        <div class="title">
+            <label for="cardnumber">Card Number</label>
+        </div>
+        <div class="box">
+            <input type="text" id="cardnumber" placeholder="Enter your card number" required>
+        </div>
+        <div class="details">
+            <div class="date">
+                <div class="title">
+                    <label for="expirationdate">Expiration Date</label>
+                </div>
+                <div class="box info">
+                    <input type="text" id="expirationdate" placeholder="MM / YY" required>
+                </div>
+            </div>
+            <div class="cvv">
+                <div class="title">
+                    <label for="cvv">CVV</label>
+                </div>
+                <div class="box">
+                    <input type="text" id="cvv" placeholder="CVV" required>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+</body>
+</html>
