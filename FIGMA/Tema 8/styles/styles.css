@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Mulish:wght@400;700&family=Open+Sans:ital,wght@0,300;1,400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif; }
+
+.box {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding: 16px; }
+  .box .info {
+    display: flex;
+    align-items: center;
+    flex: 1; }
+    .box .info img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-right: 16px; }
+    .box .info .details .name {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      color: #181818;
+      margin-right: 58px; }
+    .box .info .details .job {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #969696; }
+  .box span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #969696; }
+
+/*# sourceMappingURL=styles.css.map */
