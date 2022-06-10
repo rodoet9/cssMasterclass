@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Lora', serif; }
+
+.container {
+  display: flex; }
+  .container .left {
+    display: flex;
+    padding: 28px;
+    gap: 112px;
+    margin-right: 50px; }
+    .container .left .info {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 64px; }
+      .container .left .info:last-child {
+        margin-bottom: 0; }
+      .container .left .info .number {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 41px;
+        color: #10375C;
+        margin-bottom: 8px; }
+      .container .left .info .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #9A9A9A; }
+  .container .right {
+    width: 540px;
+    background: #10375C;
+    color: white;
+    padding: 56px; }
+    .container .right .header {
+      display: flex; }
+      .container .right .header .text {
+        margin-right: 15px;
+        margin-bottom: 8px; }
+      .container .right .header .line {
+        display: flex;
+        margin-top: 14px;
+        width: 73px;
+        height: 2px;
+        background: #FFFFFF; }
+    .container .right .title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 51px;
+      color: #FFFFFF;
+      margin-bottom: 24px; }
+    .container .right .text {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF; }
+
+/*# sourceMappingURL=styles.css.map */
