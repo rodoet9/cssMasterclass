@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     padding: 16px 24px;
-    border: 1px solid #DADADA; }
+    border-bottom: 1px solid #DADADA; }
     .container .header .title {
       font-weight: 700;
       font-size: 20px;
@@ -81,124 +81,38 @@ body {
         border: 1px solid #FFFFFF;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px; }
-    .container .content .socialmedia .facebook {
+    .container .content .socialmedia-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 352px;
-      border-bottom: 1px solid #DADADA; }
-      .container .content .socialmedia .facebook .logo {
+      border-bottom: 1px solid #DADADA;
+      padding: 12px 0; }
+      .container .content .socialmedia-item:last-child {
+        border: none; }
+      .container .content .socialmedia-item .logo {
         display: flex;
         align-items: center; }
-        .container .content .socialmedia .facebook .logo img {
-          width: 20px;
-          height: 20px; }
-        .container .content .socialmedia .facebook .logo .name {
-          margin-left: 12px;
-          margin-top: 12px;
-          margin-bottom: 12px;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          color: #017EFA; }
-      .container .content .socialmedia .facebook .visitors {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-        color: #313131; }
-      .container .content .socialmedia .facebook .percentage1 {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: right;
-        color: #313131; }
-    .container .content .socialmedia .instagram {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 352px;
-      border-bottom: 1px solid #DADADA; }
-      .container .content .socialmedia .instagram .logo {
-        display: flex;
-        align-items: center; }
-        .container .content .socialmedia .instagram .logo img {
-          width: 22px;
-          height: 22px; }
-        .container .content .socialmedia .instagram .logo .name {
-          margin-left: 12px;
-          margin-top: 12px;
-          margin-bottom: 12px;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          color: #FD1F9B; }
-      .container .content .socialmedia .instagram .visitors {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-        color: #313131; }
-      .container .content .socialmedia .instagram .percentage1 {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: right;
-        color: #313131; }
-    .container .content .socialmedia .linkedin {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 352px;
-      border-bottom: 1px solid #DADADA; }
-      .container .content .socialmedia .linkedin .logo {
-        display: flex;
-        align-items: center; }
-        .container .content .socialmedia .linkedin .logo img {
-          width: 22px;
-          height: 18px; }
-        .container .content .socialmedia .linkedin .logo .name {
-          margin-left: 12px;
-          margin-top: 12px;
-          margin-bottom: 12px;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          color: #007AB5; }
-      .container .content .socialmedia .linkedin .visitors {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-        color: #313131; }
-      .container .content .socialmedia .linkedin .percentage1 {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: right;
-        color: #313131; }
-    .container .content .socialmedia .youtube {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 352px; }
-      .container .content .socialmedia .youtube .logo {
-        display: flex;
-        align-items: center; }
-        .container .content .socialmedia .youtube .logo img {
-          width: 20px;
+        .container .content .socialmedia-item .logo img {
           height: 16px; }
-        .container .content .socialmedia .youtube .logo .name {
+        .container .content .socialmedia-item .logo .name {
           margin-left: 12px;
-          margin-top: 12px;
-          margin-bottom: 12px;
           font-weight: 600;
           font-size: 14px;
-          line-height: 22px;
-          color: #FF0000; }
-      .container .content .socialmedia .youtube .visitors {
+          line-height: 22px; }
+          .container .content .socialmedia-item .logo .name.youtube {
+            color: #FF0000; }
+          .container .content .socialmedia-item .logo .name.facebook {
+            color: #017EFA; }
+          .container .content .socialmedia-item .logo .name.instagram {
+            color: #FD1F9B; }
+          .container .content .socialmedia-item .logo .name.linkedin {
+            color: #007AB5; }
+      .container .content .socialmedia-item .visitors {
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;
         color: #313131; }
-      .container .content .socialmedia .youtube .percentage1 {
+      .container .content .socialmedia-item .percentage1 {
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;

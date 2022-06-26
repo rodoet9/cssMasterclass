@@ -1,13 +1,23 @@
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;600;700&display=swap');
 
+//mixins
+@mixin text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+}
+
 body {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: center;
   font-family: 'Khula', sans-serif;
 }
@@ -18,10 +28,9 @@ body {
   border-radius: 8px;
 
   .header {
-    display: flex;
-    align-items: center;
+    @include flex-center;
     padding: 16px 24px;
-    border: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
 
     .title {
       font-weight: 700;
@@ -33,9 +42,7 @@ body {
     }
 
     .details {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 22px;
+      @include text;
       color: #017EFA;
 
       &:hover {
@@ -80,7 +87,6 @@ body {
       display: flex;
 
       .fbbar {
-        //width: 12%;
         width: 52px;
         height: 10px;
         background: #017EFA;
@@ -90,7 +96,6 @@ body {
       }
 
       .instabar {
-        //width: 43%;
         width: 177px;
         height: 10px;
         background: #FD1F9B;
@@ -98,7 +103,6 @@ body {
       }
 
       .linkedinbar {
-        //width: 20%;
         width: 83px;
         height: 10px;
         background: #007AB5;
@@ -106,7 +110,6 @@ body {
       }
 
       .ytbar {
-        //width: 8%;
         width: 37px;
         height: 10px;
         background: #FF0000;
@@ -117,179 +120,56 @@ body {
     }
 
     .socialmedia {
-      .facebook {
-        display: flex;
-        align-items: center;
+      &-item {
+        @include flex-center;
         justify-content: space-between;
-        width: 352px;
         border-bottom: 1px solid #DADADA;
+        padding: 12px 0;
+
+        &:last-child {
+          border: none;
+        }
 
         .logo {
-          display: flex;
-          align-items: center;
+          @include flex-center;
 
           img {
-            width: 20px;
-            height: 20px;
-          }
-
-          .name {
-            margin-left: 12px;
-            margin-top: 12px;
-            margin-bottom: 12px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 22px;
-            color: #017EFA;
-          }
-        }
-
-        .visitors {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          color: #313131;
-        }
-
-        .percentage1 {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          text-align: right;
-          color: #313131;
-        }
-      }
-
-      .instagram {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 352px;
-        border-bottom: 1px solid #DADADA;
-
-        .logo {
-          display: flex;
-          align-items: center;
-
-          img {
-            width: 22px;
-            height: 22px;
-          }
-
-          .name {
-            margin-left: 12px;
-            margin-top: 12px;
-            margin-bottom: 12px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 22px;
-            color: #FD1F9B;
-          }
-        }
-
-        .visitors {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          color: #313131;
-        }
-
-        .percentage1 {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          text-align: right;
-          color: #313131;
-        }
-      }
-
-      .linkedin {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 352px;
-        border-bottom: 1px solid #DADADA;
-
-        .logo {
-          display: flex;
-          align-items: center;
-
-          img {
-            width: 22px;
-            height: 18px;
-          }
-
-          .name {
-            margin-left: 12px;
-            margin-top: 12px;
-            margin-bottom: 12px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 22px;
-            color: #007AB5;
-          }
-        }
-
-        .visitors {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          color: #313131;
-
-        }
-
-        .percentage1 {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          text-align: right;
-          color: #313131;
-        }
-      }
-
-      .youtube {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 352px;
-
-
-        .logo {
-          display: flex;
-          align-items: center;
-
-          img {
-            width: 20px;
             height: 16px;
           }
 
           .name {
             margin-left: 12px;
-            margin-top: 12px;
-            margin-bottom: 12px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 22px;
-            color: #FF0000;
+            @include text;
+
+            &.youtube {
+              color: #FF0000;
+            }
+
+            &.facebook {
+              color: #017EFA;
+            }
+
+            &.instagram {
+              color: #FD1F9B;
+            }
+
+            &.linkedin {
+              color: #007AB5;
+            }
           }
         }
 
         .visitors {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
+          @include text;
           color: #313131;
         }
 
         .percentage1 {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
+          @include text;
           text-align: right;
           color: #313131;
         }
       }
     }
-
   }
 }
