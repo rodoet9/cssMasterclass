@@ -1,0 +1,313 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+//mixins
+@mixin location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #202024;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+  width: 800px;
+
+  .header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+
+    .details {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      img {
+        border-radius: 6px;
+        width: 60px;
+        height: 60px;
+        margin-right: 16px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        .name {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 32px;
+          color: #0065FF;
+        }
+
+        .location {
+          display: flex;
+
+          .company {
+            @include location;
+            margin-right: 12px;
+          }
+
+          .city {
+            @include location;
+          }
+        }
+      }
+    }
+
+    .payment {
+      text-align: right;
+      .price {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        color: #786DCF;
+      }
+
+      .rate {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #202024;
+      }
+
+      .brokerfee {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #202024;
+      }
+    }
+  }
+
+  .content {
+    .description {
+      display: flex;
+      padding: 20px 24px;
+      background: #E2E2E2;
+
+      .text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #202024;
+      }
+
+      .buttons {
+        display: flex;
+
+
+        .archive {
+          background: #FFFFFF;
+          border-radius: 4px;
+          padding: 4px 16px;
+
+          &:hover {
+            background: lightgrey;
+            cursor: pointer;
+          }
+        }
+
+        .delete {
+          background: #786DCF;
+          border: 1px solid #786DCF;
+          border-radius: 4px;
+          color: white;
+          padding: 4px 16px;
+
+          &:hover {
+            background: #15bbde;
+            color: black;
+            cursor: pointer;
+          }
+        }
+
+        button {
+          margin-right: 6px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .informational {
+      display: flex;
+      border-bottom: 1px solid #E2E2E2;
+
+      &-item {
+        padding: 16px 24px;
+        display: flex;
+        flex: 1 1 0px;
+        flex-direction: column;
+        border-right: 1px solid #E2E2E2;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        h3 {
+          font-size: 16px;
+          font-weight: 600;
+          color: #202024;
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+
+          li {
+            display: flex;
+
+            span {
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 24px;
+              color: #202024;
+
+              &:first-child {
+                display: flex;
+                flex: 1;
+              }
+            }
+          }
+        }
+
+        .price {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 40px;
+          color: #786DCF;
+          margin-bottom: 8px;
+        }
+
+        .brokerfee {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          color: #202024;
+        }
+
+        .bold {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #0065FF;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #786DCF;
+    padding: 16px 24px;
+  }
+
+  .footer {
+    .infos {
+      display: flex;
+      padding: 16px 24px;
+      background: #E2E2E2;
+
+      .logo {
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 5px;
+          margin-right: 24px;
+        }
+      }
+
+      .companydetails {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+
+
+        .name {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #202024;
+
+        }
+
+        .address {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          color: #202024;
+        }
+      }
+
+      .deadline {
+        span {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          color: #202024;
+
+          &.counter {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #DF3859;
+          }
+        }
+
+        &-buttons {
+          margin-top: 12px;
+          text-align: right;
+
+          .archive {
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            border-radius: 6px;
+            padding: 8px 32px;
+            margin-right: 6px;
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+          .share {
+            background: #786DCF;
+            border: 1px solid #786DCF;
+            border-radius: 6px;
+            padding: 8px 32px;
+            color: white;
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
